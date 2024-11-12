@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="mt-3 d-flex justify-content-center" >
+            <img src="file.png" alt="logo">
+    </div>
+
+    <div class="login-container">
+            <div class="login-box mb-3">
+            <h2 class="fw-bold">Register</h2>
+            <form id="registrationForm"> 
+                <div class="input-group">
+                    <label for="Name">Full Name</label>
+                    <input type="text" name="Name"id="Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" name="mobile" id="mobile" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" max="2024-11-11" name="dob" id="dob" required>
+                </div>
+                <div class="input-group justify-content-center">
+                    <label for="age">Age</label>
+                    <input type="range" min="0" max="100" value="20" name="age" id="age" oninput="document.getElementById('volumeOutput').textContent = this.value" required>
+                    <span id="volumeOutput">20</span>       
+                </div>
+                <div class="input-group">
+                    <label for="civil-id">Civil ID Number</label>
+                    <input type="text" id="civil-id" name="civil-id" required>
+                </div>
+                <div class="input-group mt-5 mb-5">
+                    <label for="country">Nationality:</label>
+                    <select id="country" class="ms-3" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brazil</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="CV">Cabo Verde</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, Democratic Republic of the</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Côte d'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czechia</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="SZ">Eswatini</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GR">Greece</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea, North</option>
+                        <option value="KR">Korea, South</option>
+                        <option selected value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia</option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russia</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syria</option>
+                        <option value="TW">Taiwan</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select>
+                    
+                </div>
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <label class="fw-bold d-flex justify-content-start ms-2 fs-5 mb-4">Are You A Student</label>
+                <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" name="check" onclick="showInputs('set1')" id="flexCheckDefault">
+                    <label class="form-check-label ms-3" for="flexCheckDefault">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" name="check" onclick="showInputs('set2')" id="flexCheckChecked">
+                    <label class="form-check-label ms-3" for="flexCheckChecked" >
+                      No
+                    </label>
+                  </div>
+
+            
+                <!-- Input Sets -->
+                <div id="set1" class="mt-4 switch" style="display: none;">
+                    <div class="input-group">
+                        <label for="school">Name of College/university/school ?</label>
+                        <input required type="text" id="school" name="school">
+                    </div>
+                </div>
+            
+                <div id="set2" class="mt-4 switch" style="display: none;">
+                    <div class="input-group">
+                        <label for="job">Job Title</label>
+                        <input required type="text" id="job" name="job">
+                    </div>
+                    <div class="input-group">
+                        <label for="employer">Employer</label>
+                        <input required type="text" id="employer" name="employer">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="fw-bold d-flex justify-content-start ms-2 fs-5 mb-4 mt-3">Do you have one or multiple of the following skills ?</label>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="game_developer" id="game_developer">
+                      <label class="form-check-label" for="game_developer">
+                        Game Developer - مطور ألعاب فيديو
+                      </label>
+                    </div>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="3d_modeler" id="3d_modeler">
+                      <label class="form-check-label" for="3d_modeler">
+                        3D Modeler - مصمم جرافيك 3D
+                      </label>
+                    </div>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="ui_designer" id="ui_designer">
+                      <label class="form-check-label" for="ui_designer">
+                        UI Designer
+                      </label>
+                    </div>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="2d_modeler" id="2d_modeler">
+                      <label class="form-check-label" for="2d_modeler">
+                        2D Modeler - مصمم جرافيك 2D
+                      </label>
+                    </div>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="audio_sound_creator" id="audio_sound_creator">
+                      <label class="form-check-label" for="audio_sound_creator">
+                        Audio / Sound Creator
+                      </label>
+                    </div>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="animator" id="animator">
+                      <label class="form-check-label" for="animator">
+                        Animator
+                      </label>
+                    </div>
+                    <div class="form-check d-flex skills">
+                      <input class="form-check-input" type="checkbox" name="skills" value="story_creator" id="story_creator">
+                      <label class="form-check-label" for="story_creator">
+                        Story creator / كتاب محتوى أو قصة
+                      </label>
+                    </div>
+                    <small class="form-text text-danger" id="checkbox-error" style="display: none;">Please select at least one option.</small>
+                  </div>
+                  <div class="input-group mt-4">
+                    <label for="apps">What Applications Do You Use ?</label>
+                    <input type="text" id="apps" name="apps" required>
+                </div>
+                <label class="fw-bold d-flex justify-content-start ms-2 fs-5 mb-4 mt-3">Have You Ever Participated In Other Game Jams ?</label>
+                <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" name="jams" id="jams">
+                    <label class="form-check-label ms-3" for="jams">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" name="jams" id="jams2">
+                    <label class="form-check-label ms-3" for="jams2" >
+                      No
+                    </label>
+                  </div>
+
+                  <label class="fw-bold d-flex justify-content-start ms-2 fs-5 mb-4 mt-3">Have You Ever Designed or Developed a Game ?</label>
+                <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" onclick="showInputs2('set3')" name="game" id="yes2">
+                    <label class="form-check-label ms-3" for="yes2">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" onclick="showInputs2('set3')" name="game" id="no2">
+                    <label class="form-check-label ms-3" for="no2" >
+                      No
+                    </label>
+                  </div>
+
+                  <div id="set3" class="mt-4 switch2" style="display: none;">
+                    <div class="input-group">
+                        <label for="job">Game Name</label>
+                        <input required type="text" id="job" name="job">
+                    </div>
+                    <div class="input-group">
+                        <label for="employer">The Game Last Stage Of Development</label>
+                        <input required type="text" id="employer" name="employer">
+                    </div>
+                </div>
+                <div class="input-group mt-3">
+                    <label for="why">Why Do you Want To Participate ?</label>
+                    <input type="text" id="why" name="why" required>
+                </div>
+
+                <label class="fw-bold d-flex justify-content-start ms-2 fs-5 mb-4 mt-3">Do You Want To Be A Contestant Or A Volunteer ?</label>
+                <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" name="par_type" id="Contestant">
+                    <label class="form-check-label ms-3" for="Contestant">
+                        Contestant
+                    </label>
+                  </div>
+                  <div class="form-check d-flex">
+                    <input required class="form-check-input" type="radio" name="par_type" id="Volunteer">
+                    <label class="form-check-label ms-3" for="Volunteer" >
+                        Volunteer
+                    </label>
+                  </div>
+
+                  <label class="fw-bold d-flex justify-content-start ms-2 fs-5 mb-4 mt-3">
+                    Do you have a first or second degree relative who works at the National Council for Culture, Arts and Letters, Warba Bank, the Public Authority for Youth, or one of the participants in preparing for this competition?
+                </label>
+                  <div class="form-check d-flex">
+                      <input required class="form-check-input" type="radio" onclick="showInputs3('set4')" name="game1" id="yes">
+                      <label class="form-check-label ms-3" for="yes">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check d-flex">
+                      <input required class="form-check-input" type="radio" onclick="showInputs3('set4')" name="game1" id="no">
+                      <label class="form-check-label ms-3" for="no" >
+                        No
+                      </label>
+                    </div>
+  
+                    <div id="set4" class="mt-4 switch3" style="display: none;">
+                      <div class="input-group">
+                          <label for="details">Please Provide More Details</label>
+                          <input required type="text" id="details" name="details">
+                      </div>
+                  </div>
+
+                  <div class="input-group mt-4">
+                    <label class="fw-bold" for="agree">I Admit...</label>
+                    <p class="fs-6">The validity of the data and information in this form,
+                     and I also pledge to work on the game during the announced competition
+                     period during the period from DATA to DATA, YEAR. In the event
+                     of my violation of this declaration, my participation in the competition 
+                    will be cancelled, along with the consequences thereof. </p>
+                    <label for="agree">Please Write Your Name</label>
+                    <input type="text" id="agree" name="agree" required>
+                </div>
+                  
+
+            
+
+
+                <button class="mt-5" style="max-width: 300px;" type="submit">Submit</button>
+            </div>
+            
+               
+
+                
+            </form>
+          
+        </div>
+        
+    </div>
+    <script>
+        function showInputs(setId) {
+            // Hide all input sets
+            document.querySelectorAll('.switch').forEach(function(div) {
+                div.style.display = 'none';
+            });
+    
+            // Show the selected input set
+            document.getElementById(setId).style.display = 'block';
+        }
+        function showInputs2(setId) {
+            if (document.getElementById("no2").checked == true) {
+                document.getElementById(setId).style.display = 'none';
+            }else {
+                document.getElementById(setId).style.display = 'block';
+            }
+        }
+        function showInputs3(setId) {
+            if (document.getElementById("no").checked == true) {
+                document.getElementById(setId).style.display = 'none';
+            }else {
+                document.getElementById(setId).style.display = 'block';
+            }
+        }
+
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    const checkboxes = document.querySelectorAll('input[name="skills"]');
+    const errorText = document.getElementById('checkbox-error');
+    
+    // Check if at least one checkbox is checked
+    const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+    
+    if (!isChecked) {
+      // Prevent form submission and show error
+      event.preventDefault();
+      errorText.style.display = 'block';
+    } else {
+      // Hide error if at least one is checked
+      errorText.style.display = 'none';
+    }
+  });
+
+    </script>
+    <script src="/register.js"></script>
+</body>
+</html>
